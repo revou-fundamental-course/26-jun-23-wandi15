@@ -71,7 +71,7 @@
                                       <br>jam setelah data kami terima</i>
                                   </small>
                               </h5>
-                              <form>
+                              <form method="POST" class="form">
                                   <label>Your Name</label><br>
                                   <input class="form-control" type="text" id="nama" name="nama"   data-parsley-required="true"  />
                                       
@@ -202,5 +202,16 @@
         console.log(indicators);
 
         })
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.form').on('submit', function() {
+                var nama = document.getElementById("nama").value ;
+                var email = document.getElementById("email").value ;
+                var plh_tertarik = document.getElementById("plh_tertarik").value ;
+                alert('Data Anda Telah Tersimpan dengan Nama : ' + nama + 'dan Email :' + email + 'Toko : '+ plh_tertarik);
+            });
+        });
     </script>
 </html>
