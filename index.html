@@ -73,10 +73,10 @@
                               </h5>
                               <form method="POST" class="form">
                                   <label>Your Name</label><br>
-                                  <input class="form-control" type="text" id="nama" name="nama"   data-parsley-required="true"  />
+                                  <input class="form-control" type="text" id="nama" name="nama"   required  />
                                       
                                   <label>Email Address</label><br>
-                                  <input class="form-control" type="text" id="email" name="email"   data-parsley-required="true"  />
+                                  <input class="form-control" type="text" id="email" name="email"   required />
                                       
                                   <label>What are you interested in?</label><br>
                                   <select name="plh_tertarik" id="plh_tertarik" readonly class="form-control selectpicker" data-live-search="true" data-parsley-required="true" onchange="dapat_masax(<?php echo $acak; ?>);hitung_nilai_jaminan(<?php echo $acak; ?>);konversinkz();pilih_sumber_gaji();" data-style="btn-white">
